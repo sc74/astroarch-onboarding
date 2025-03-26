@@ -49,7 +49,7 @@ Item {
 
                 onLinkActivated: Qt.openUrlExternally( link )
 
-                text: qsTr('<p>Find information or ask questions on :</p> \
+                text: qsTr('<p>Find informations or ask questions on :</p> \
                 <p><br />Github <a href="https://github.com/devDucks/astroarch">https://github.com/devDucks/astroarch</a></p> \
                 <p>Discord <a href="https://discord.com/invite/uJEQCZKBT8">https://discord.com/invite/uJEQCZKBT8</a></p> \
                 <p>Indilib <a href="https://indilib.org/forum/astro-arch.html">https://indilib.org/forum/astro-arch.html</a></p> \
