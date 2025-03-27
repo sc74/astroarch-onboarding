@@ -11,4 +11,4 @@ chsh -s /usr/bin/zsh root
 
 # Allow root access with no password to astroarch-onboarding.desktop
 rm -f /usr/share/polkit-1/actions/com.github.calamares.calamares.policy
-ln -s /usr/share/calamares/.astroarch/configs/calamares_astroarch/com.github.calamares.calamares.policy /usr/share/polkit-1/actions/com.github.calamares.calamares.policy
+ln -s /usr/share/calamares/.astroarch/build-astroarch/configs/com.github.calamares.calamares.policy /usr/share/polkit-1/actions/com.github.calamares.calamares.policy
