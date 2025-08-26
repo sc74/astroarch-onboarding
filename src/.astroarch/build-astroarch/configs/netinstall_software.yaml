@@ -1,5 +1,5 @@
 - name: "Astronomy"
-  description: "Astronomy softwares"
+  description: "Astronomy software"
   hidden: false
   selected: false
   critical: false
@@ -30,3 +30,15 @@
       selected: false
       packages:
        - pylibcamera
+- name: "Other"
+  description: "Other software"
+  hidden: false
+  selected: false
+  critical: false
+  expanded: true
+  subgroups:
+    - name: "RustDesk"
+      description: "The Fast Open-Source Remote Access and Support Software"
+      selected: false
+      packages:
+       - rustdesk
