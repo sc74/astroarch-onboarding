@@ -1,0 +1,19 @@
+[Desktop Entry]
+Categories=Qt;System;
+Comment=Calamares — System Installer
+Exec=sh -c 'pkexec calamares'
+GenericName=System Installer
+Icon=/run/media/astronaut/b5847709-aaea-4937-a962-1f5f82f1fb60/Projects/astroarch-onboarding/src/branding/astroarch/astroarch-w-96x96.png
+Keywords=calamares;system;installer;
+MimeType=
+Name=Install System
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+TryExec=calamares
+Type=Application
+Version=1.0
+X-AppStream-Ignore=true
+X-KDE-SubstituteUID=false
+X-KDE-Username=
