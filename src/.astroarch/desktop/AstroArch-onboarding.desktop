@@ -58,7 +58,7 @@ Comment[uk]=Calamares - Встановлювач системи
 Comment[vi]=Calamares — Bộ cài đặt hệ thống
 Comment[zh_CN]=Calamares — 系统安装程序
 Comment[zh_TW]=Calamares ── 系統安裝程式
-Exec=sh -c 'xhost +si:localuser:root && pkexec env DISPLAY=$DISPLAY calamares'
+Exec=sh -c 'xhost +si:localuser:root && sudo calamares'
 GenericName=System Installer
 GenericName=System Installer
 GenericName[ar]=مثبت النظام

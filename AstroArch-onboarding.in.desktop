@@ -1,11 +1,14 @@
 [Desktop Entry]
 Categories=Qt;System;
 Comment=Calamares — System Installer
-Exec=sh -c 'pkexec calamares'
+Comment=Calamares — System Installer
+Exec=sh -c 'xhost +si:localuser:root && pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY calamares'
 GenericName=System Installer
-Icon=/run/media/astronaut/b5847709-aaea-4937-a962-1f5f82f1fb60/Projects/astroarch-onboarding/src/branding/astroarch/astroarch-w-96x96.png
+GenericName=System Installer
+Icon=/home/astronaut/.astroarch/assets/icons/novnc-96x96.png
 Keywords=calamares;system;installer;
 MimeType=
+Name=Install System
 Name=Install System
 Path=
 StartupNotify=true

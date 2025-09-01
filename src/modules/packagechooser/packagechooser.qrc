@@ -4,8 +4,6 @@
          <file>images/power_max.svg</file>
          <file>images/gps_on.svg</file>
          <file>images/gps_off.svg</file>
-         <file>images/gps_on_ublox.svg</file>
-         <file>images/gps_on_uart.svg</file>
          <file>images/ftp_on.svg</file>
          <file>images/ftp_off.svg</file>
          <file>images/bluetooth_on.svg</file>
