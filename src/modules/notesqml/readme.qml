@@ -49,11 +49,14 @@ Item {
 
                 onLinkActivated: Qt.openUrlExternally( link )
 
-                text: qsTr('<p>Find informations or ask questions on :</p> \
-                <p><br />Github <a href="https://github.com/devDucks/astroarch">https://github.com/devDucks/astroarch</a></p> \
+                text: qsTr(' <p>AstroArch was built for curiosity, not consensus.<p> \
+                <p>Even if I’m the only one who finds joy in it—tuning drivers, reshaping workflows, and bending the system to my will—that’s enough.<p> \
+                <p>But if that sounds like your kind of fun, welcome aboard.<p> \
+                <p><p> \
+                <p>Find informations or ask questions :</p> \
+                <p>Github <a href="https://github.com/devDucks/astroarch">https://github.com/devDucks/astroarch</a></p> \
                 <p>Discord <a href="https://discord.com/invite/uJEQCZKBT8">https://discord.com/invite/uJEQCZKBT8</a></p> \
                 <p>Indilib <a href="https://indilib.org/forum/astro-arch.html">https://indilib.org/forum/astro-arch.html</a></p> \
-                <p>&nbsp;</p> \
                 <p><img src="/usr/share/calamares/branding/astroarch/slide1.png" alt="astroarch image" width="96" height="96" />&nbsp; Clear skies and have fun with AstroArch<br />Mattia Procopio</p>')
         }
     }
