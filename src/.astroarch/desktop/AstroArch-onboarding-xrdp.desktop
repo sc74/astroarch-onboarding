@@ -1,14 +1,11 @@
 [Desktop Entry]
 Categories=Qt;System;
 Comment=AstroArch — System Configuration
-Comment=AstroArch — System Configuration
-Exec=sh -c 'xhost +si:localuser:root && pkexec env HOME=/home/astronaut XDG_CURRENT_DESKTOP=KDE XDG_SESSION_TYPE=x11 XDG_SESSION_CLASS=user XDG_SESSION_ID=3 DISPLAY=:10 calamares'
-GenericName=AstroArch onboarding
+Exec=sh -c 'sleep 30s && xhost +si:localuser:root && pkexec env HOME=/home/astronaut XDG_CURRENT_DESKTOP=KDE XDG_SESSION_TYPE=x11 XDG_SESSION_CLASS=user XDG_SESSION_ID=3 DISPLAY=:10 calamares'
 GenericName=AstroArch onboarding
 Icon=/home/astronaut/.astroarch/assets/icons/novnc-96x96.png
 Keywords=calamares;system;installer;
 MimeType=
-Name=AstroArch-onboarding
 Name=AstroArch-onboarding
 Path=
 StartupNotify=true
