@@ -1,0 +1,9 @@
+/* Allow Calamares to be started without password authentication VNC
+ */
+polkit.addRule(function(action, subject)  {
+   if (action.id == "org.freedesktop.policykit.exec" && action.lookup("program") == "/usr/bin/env")
+       {
+       return polkit.Result.YES;
+   }
+});
+

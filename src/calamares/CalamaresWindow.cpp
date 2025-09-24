@@ -402,8 +402,8 @@ CalamaresWindow::CalamaresWindow( QWidget* parent )
     // %1 is the distribution name
     CALAMARES_RETRANSLATE( const auto* branding = Calamares::Branding::instance();
                            setWindowTitle( Calamares::Settings::instance()->isSetupMode()
-                                               ? tr( "%1 Setup Program" ).arg( branding->productName() )
-                                               : tr( "%1 Installer" ).arg( branding->productName() ) ); );
+                                               ? tr( "%1 setup program" ).arg( branding->productName() )
+                                               : tr( "%1 configurator" ).arg( branding->productName() ) ); );
 
     const Calamares::Branding* const branding = Calamares::Branding::instance();
     using ImageEntry = Calamares::Branding::ImageEntry;

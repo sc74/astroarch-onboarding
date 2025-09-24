@@ -1,0 +1,23 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Categories=Qt;System;
+Comment[fr_CH]=Astroarch — System Configuration
+Comment=AstroArch — System Configuration
+Exec=sh -c 'xhost +si:localuser:root && pkexec env $(printenv) calamares'
+GenericName[fr_CH]=AstroArch onboarding
+GenericName=AstroArch onboarding
+Icon=/home/astronaut/.astroarch/assets/icons/novnc-96x96.png
+Keywords=calamares;system;installer;
+MimeType=
+Name[fr_CH]=AstroArch-onboarding
+Name=AstroArch-onboarding
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+TryExec=calamares
+Type=Application
+Version=1.0
+X-AppStream-Ignore=true
+X-KDE-SubstituteUID=false
+X-KDE-Username=
