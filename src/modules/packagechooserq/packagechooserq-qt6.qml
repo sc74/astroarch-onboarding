@@ -14,6 +14,7 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
 
+
 Item {
     width:  parent.width
     height: parent.height
@@ -169,6 +170,38 @@ Item {
                     text: qsTr("Default: Kstars stable")
                     font.pointSize: 10
                     wrapMode: Text.WordWrap
+                }
+            }
+
+            Rectangle {
+                width: 700
+                height: 50
+                color: "#ffffff"
+                radius: 10
+                border.width: 0
+
+                Text {
+                    x: 10
+                    y: 15
+                    text: qsTr("Recovering your backup with Astro monitor:")
+                    font.pointSize: 10
+                }
+
+                TextField {
+                    id: astromonitorInputField
+                    x: 290
+                    y: 10
+                    width: 390
+                    placeholderText: qsTr("Enter your astromonitor token here")
+                    color: "black"
+                    background: Rectangle {
+                        color: "#f2f2f2"
+                    }
+                    placeholderTextColor: "darkgray"
+
+                    onTextChanged: {
+                        config.astromonitorToken = astromonitorInputField.text
+                    }
                 }
             }
         }
