@@ -25,11 +25,6 @@
       selected: false
       packages:
        - pylibcamera
-    - name: "Aladin"
-      description: "Interactive software sky atlas"
-      selected: false
-      packages:
-       - aladin
 - name: "Other"
   description: "Other software"
   hidden: false
