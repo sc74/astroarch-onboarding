@@ -186,25 +186,40 @@ Item {
                     text: qsTr("Recovering your backup with Astro monitor:")
                     font.pointSize: 10
                 }
+                Switch {
+                    id: backupSwitch
+                    x: 500
+                    y: 110
+                    width: 187
+                    height: 14
+                    anchors.verticalCenter: parent.verticalCenter
+                    text: checked ? qsTr("Yes") : qsTr("No")
+                    checked: false
+                    hoverEnabled: true
 
-                TextField {
-                    id: astromonitorInputField
-                    x: 290
-                    y: 10
-                    width: 390
-                    placeholderText: qsTr("Enter your astromonitor token here")
-                    color: "black"
-                    background: Rectangle {
-                        color: "#f2f2f2"
+                    indicator: Rectangle {
+                        implicitWidth: 40
+                        implicitHeight: 14
+                        radius: 10
+                        color: backupSwitch.checked ? "#3498db" : "#B9B9B9"
+                        border.color: backupSwitch.checked ? "#3498db" : "#cccccc"
+
+                        Rectangle {
+                            x: backupSwitch.checked ? parent.width - width : 0
+                            y: (parent.height - height) / 2
+                            width: 20
+                            height: 20
+                            radius: 10
+                            color: backupSwitch.down ? "#cccccc" : "#ffffff"
+                            border.color: backupSwitch.checked ? (backupSwitch.down ? "#3498db" : "#3498db") : "#999999"
+                        }
                     }
-                    placeholderTextColor: "darkgray"
 
-                    onTextChanged: {
-                        config.astromonitorToken = astromonitorInputField.text
+                    onCheckedChanged: {
+                        config.astromonitorToken = checked ? "true" : "false"
                     }
                 }
             }
         }
     }
-
 }
